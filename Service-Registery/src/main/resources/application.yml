@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Service-Registery   # Match exactly with GitHub file Service-Registery.yml
+  config:
+    import: configserver:http://localhost:8888   # Import config from Config Server

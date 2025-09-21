@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Api-Gateway   # Match exactly with your GitHub config file name
+  config:
+    import: configserver:http://localhost:8888   # Import config from Config Server

@@ -9,7 +9,7 @@ spring:
           clone-on-start: true
 management:
   security:
-  enabled: false
+    enabled: false
 
 server:
   port: 8888
