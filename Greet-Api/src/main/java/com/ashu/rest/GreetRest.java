@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DemoRest {
+public class GreetRest {
 	
-	@GetMapping("/demo")
-	public String demo() {
-		return "Hello from Demo Rest";
+	@GetMapping("/greet")
+	public String greet() {
+		return "Hello from Greet-Api";
 	}
 }

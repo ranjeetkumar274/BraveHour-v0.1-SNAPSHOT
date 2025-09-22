@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: greet-api
+
+server:
+  port: 9091

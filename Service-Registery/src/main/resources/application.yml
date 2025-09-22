@@ -1,5 +1,20 @@
 spring:
   application:
-    name: Service-Registery   # Match exactly with GitHub file Service-Registery.yml
+    name: service-registery
   config:
-    import: configserver:http://localhost:8888   # Import config from Config Server
+    import: optional:configserver:http://40.81.226.133:8888
+  cloud:
+    config:
+      enabled: false
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
